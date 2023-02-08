@@ -94,7 +94,7 @@ input[type="submit"] {
   line-height: 10px;
 }
 
-/*Media Querries*/
+/*for different screens*/
 
 @media screen and (max-width:780px){
     #content-container{

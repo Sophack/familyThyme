@@ -14,3 +14,19 @@ async function getRandomMeal() {
     addMeal(randomMeal, true);
 } 
 }
+
+if (name && needed_funding && description) {
+    const response = await fetch(`/api/projects`, {
+      method: 'POST',
+      body: JSON.stringify({ name, needed_funding, description }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (response.ok) {
+      document.location.replace('/profile');
+    } else {
+      alert('Failed to create project');
+    }
+  }

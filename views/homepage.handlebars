@@ -1,28 +1,64 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-<h1>Recent Recipes</h1>
-<ul>
-  {{#each recipes}}
-    <li>
-      <h2>{{title}}</h2>
-      <p>Category: {{category}}</p>
-      <p>Directions: {{directions}}</p>
-    </li>
-  {{/each}}
-</ul>
 <body>
+<h1>Recent Recipes</h1>
+
+<section class="card">
+  <!-- The contents of this card links to the gallery page using the gallery ID -->
+  <a href="/gallery/{{id}}">
+    <!-- The card contains the gallery name as the card header -->
+    <header>{{name}}</header>
+    <!-- The card contains the first painting of the gallery -->
+    <img src="/images/{{paintings.[0].filename}}" alt="{{paintings.[0].description}}">
+  </a>
+</section>
+
+{{#if logged_in}}
 
 <div class="w3-container">
-  <h2>Recipes</h2>
+  <h2>{{title}}</h2>
 
   <div class="w3-card-4" style="width:50%">
-    <img src="img_snowtops.jpg" alt="Alps" style="width:100%">
+    <img src="https://themealdb.com/images/media/meals/llcbn01574260722.jpg/preview" alt="pasta" style="width:100%">
     <div class="w3-container w3-center">
-      <p>Mom's Spaghetti</p>
+      <p>Category: easy meals</p>
     </div>
   </div>
 </div>
+<div class="w3-container">
+  <h2>{{title}}</h2>
+
+  <div class="w3-card-4" style="width:50%">
+    <img src="https://www.themealdb.com/images/media/meals/tvvxpv1511191952.jpg" alt="soup" style="width:100%">
+    <div class="w3-container w3-center">
+      <p>Category: Gourmet meals</p>
+    </div>
+  </div>
+</div>
+<div class="w3-container">
+  <h2>{{title}}</h2>
+
+  <div class="w3-card-4" style="width:50%">
+    <img src="https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg" alt="pasta" style="width:100%">
+    <div class="w3-container w3-center">
+      <p>Category: easy meals</p>
+    </div>
+  </div>
+</div>
+<div class="w3-container">
+  <h2>{{title}}</h2>
+
+  <div class="w3-card-4" style="width:50%">
+    <img src="https://www.themealdb.com/images/media/meals/ssrrrs1503664277.jpg" alt="roast" style="width:100%">
+    <div class="w3-container w3-center">
+      <p>Category: Gourmet meals</p>
+    </div>
+  </div>
+</div>
+
+</body>
+
+
 
 </body>
 </html>

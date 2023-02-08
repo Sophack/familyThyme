@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
       if (username === "admin" && password === "password") {
         // Redirect to main.html
-        window.location.href = "main.html";
+        window.location.href = "main.handlebars";
       } else {
         alert("Incorrect username or password");
       }

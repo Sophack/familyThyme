@@ -22,20 +22,16 @@ Recipe.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        //the users can write directions without restriction
-        directions: {
+        //the users can input directions to add/edit recipes
+        directionsAdd: {
             type: DataTypes.TEXT,
             allowNull: false,
             validate: {
-                max: 400
+                max: 500
             }          
         },
         category: {
             type: DataTypes.STRING,
-            allowNull: false,
-        },
-        prep_time: {
-            type: DataTypes.INTEGER,
             allowNull: false,
         },
     },
