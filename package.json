@@ -12,6 +12,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "ascii-art": "^2.8.5",
         "bcrypt": "^5.1.0",
         "connect-session-sequelize": "^7.1.5",
         "dotenv": "^8.6.0",
@@ -22,6 +23,7 @@
         "helpers": "^0.0.6",
         "mysql2": "^2.2.5",
         "sequelize": "^6.3.5",
-        "utils": "^0.3.1"
+        "utils": "^0.2.2",
+        "node": "^16.18.0"
     }
 }

@@ -16,7 +16,9 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);//Ini
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-const SequelizeStore = require('connect-session-sequelize')(session.Store);//Initializing Sequelize with session store
+app.locals.recipeYear = () => {
+    return new Date().getFullYear();
+};
 
 const handlebars = ExpHandlebars.create({});
 
@@ -30,6 +32,12 @@ const sess = {
     db: sequelize
     })
 }
+
+
+
+
+
+
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
