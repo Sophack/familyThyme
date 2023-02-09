@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 router.use('/users', userRoute);
 router.use('/recipes', foodRoute);
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+router.use(bodyParser.json());
+router.use(bodyParser.urlencoded({ extended: true }));
 
 module.exports = router;

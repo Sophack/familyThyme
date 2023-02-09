@@ -7,8 +7,7 @@ const routes = require('./controllers');
 const sequelize = require('./config/connections');
 //add path here to database when needed
 const helpers = require('./utils/helpers'); //add path here to helpers when needed
-const sequelize = require('./config/connections');
-const db = require('./db/connection');
+const db = require('./config/connections');
 
 
 const SequelizeStore = require('connect-session-sequelize')(session.Store);//Initializing Sequelize with session store

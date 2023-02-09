@@ -2,8 +2,10 @@
 
 [![NPM Download Stats](https://nodei.co/npm/package.png?downloads=true)](https://www.npmjs.com/package)
 
+
+
 ## Description
-Do you have family recipes that have been passed on from older generations? Are the recipes nowhere to be found, illegible or destroyed? Family Thyme makes sure that doesn't happen by  
+Do you have family recipes that have been passed on from older generations? Are the recipes nowhere to be found, illegible or destroyed? Family Thyme makes sure that doesn't happen by providing the user a platform to use and store their precious family heirlooms. 
 
 
 ## Table of Contents
@@ -41,9 +43,11 @@ Once the user goes through the appropriate prompts an HTML file is generated con
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
+
+
 ## License
 
-![](https://img.shields.io/badge/License-MIT-yellowgreen)
+![](https://img.shields.io/badge/License-MIT-yellowgreen) 
 
 
 ## Contributors

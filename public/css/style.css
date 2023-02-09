@@ -25,8 +25,8 @@
 }
 
 img {
-  width: 200px;
-  height: 100px;
+  width: 20%;
+  height: 18%;
   display: block;
   margin: 0 auto;
   padding-top: 10px;
@@ -58,6 +58,7 @@ h1, h2 {
   font-family: 'Square peg', cursive;
 }
 
+/* login form */
 form {
   color: white;
   display: flex;
@@ -110,11 +111,9 @@ input[type="submit"] {
 /*for different screens*/
 
 @media screen and (max-width:780px){
-    #content-container{
+    .container{
         width: 50%;
     }
-}
-@media screen and (max-width:780px){
     body{
         width: 50%;
         height: 50%;
@@ -128,18 +127,33 @@ input[type="submit"] {
 
     }
 }
-@media screen and (max-width:1200px){
-    .main-content{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .profile img{
-        width: 40%;
-    }
-}
-@media screen and (max-width:700px){
-    .profile img{
+
+@media screen and (max-width:400px){
+    .navbar{
         width: 60%;
     }
+    header{
+      justify-content: center;
+      flex-direction: column;
+  }
+  .container{
+    width: 50%;
+    
+}
+body{
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.directions{
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+  font-size: larger;
+
+}
 }
 @media screen and (max-width:390px){
     .name{
