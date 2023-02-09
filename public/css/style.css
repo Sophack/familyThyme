@@ -1,6 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Square+Peg&family=Updock&display=swap');
 
+* {
+  background: #333333;
+  font-family:Arial, Helvetica, sans-serif;
+
+}
+
 #content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin-bottom: 20%;
+}
+
+#w3-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,18 +33,17 @@ img {
 }
 
 a {
-  color: #00B7FF;
+  color: #c7e3d2;
 }
 
-h1 {
+h1, h2 {
   color: greenyellow;
   font-size: 3em;
   text-align: center;
   margin-bottom: 1em;
-  font-size: 5em;
-  margin-bottom: 30%;
   height: 45px;
-  font-family: 'Square peg', cursive;
+  
+
 }
 
 .recipe-header {
@@ -41,7 +55,7 @@ h1 {
   font-size: 5em;
   margin-bottom: 30%;
   height: 45px;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Square peg', cursive;
 }
 
 form {
@@ -55,7 +69,6 @@ form {
 body {
   background-color: #333333;
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;

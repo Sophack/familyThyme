@@ -1,5 +1,4 @@
 const router = require('express').Router();
-// Here is where we provide hardcoded data to render dynamically
 
 
 
@@ -9,11 +8,11 @@ const router = require('express').Router();
 router.get('/recipe/:directions', async (req, res) => {
 
     try {
-      const dbPaintingData = await Painting.findByPk(req.params.id);
+      const recipeData = await Recipe.findByPk(req.params.id);
   
-      const painting = dbPaintingData.get({ plain: true });
+      const directions = recipeData.get({ plain: true });
   
-      res.render('painting', { painting });
+      res.render('Recipe', { directions });
     } catch (err) {
       console.log(err);
       res.status(500).json(err);

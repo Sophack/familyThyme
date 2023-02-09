@@ -2,7 +2,7 @@ const addMealFormHandler = async (event) => {
 
 //add ids from partials 
 const name = document.querySelector("#name").value.trim();
-const description = document.querySelector("#description").value.trim();
+const description = document.querySelector("#directions").value.trim();
 
 async function getRandomMeal() {
     const resp = await fetch(

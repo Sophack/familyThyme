@@ -2,7 +2,7 @@ async function loginFormHandler(event) {
     event.preventDefault();
   
     // Collect values from the login form
-    const username = document.querySelector('#login').value.trim();
+    const username = document.querySelector('#login-form').value.trim();
     const password = document.querySelector('#password-login').value.trim();
   
     if (username && password) {
@@ -15,7 +15,7 @@ async function loginFormHandler(event) {
   
       if (response.ok) {
         // If successful, redirect the browser to the profile page
-        document.location.replace('/views/layouts/homepage');
+        document.location.replace('/views/homepage');
       } else {
         alert(response.statusText);
       }
