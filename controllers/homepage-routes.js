@@ -21,7 +21,7 @@ router.get('/homepage', withAuth, async (req, res) => { //Rendering homepage
 
          //get routes to try the db data 
     //wait for all the info
-    const recipeDbData = await Recipe.findAll({
+    const recipeData = await Recipe.findAll({
         include: [
           {
             model: Recipe,
@@ -32,7 +32,7 @@ router.get('/homepage', withAuth, async (req, res) => { //Rendering homepage
       });
       //we are serializing the data 
 
-    const recipes = recipeDbData.map((recipe) =>
+    const recipes = recipeData.map((recipe) =>
     recipe.get({ plain: true })
   );
         res.render('homepage', {

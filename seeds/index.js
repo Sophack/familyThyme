@@ -7,7 +7,7 @@ const seedAll = async () => {
 
   await seedUsers(); //Seeds user data
 
-  //await seedRecipes(); //Seeds recipe data
+  await seedRecipes(); //Seeds recipe data
 
   process.exit(0);
 };

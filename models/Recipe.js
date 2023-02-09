@@ -27,7 +27,7 @@ Recipe.init(
             type: DataTypes.TEXT,
             allowNull: false,
             validate: {
-                max: 500
+                max: 800
             }          
         },
         category: {

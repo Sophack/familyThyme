@@ -12,5 +12,5 @@ module.exports = router;
 
 
 
-module.exports = { User, };
+module.exports = { User, Recipe};
 
