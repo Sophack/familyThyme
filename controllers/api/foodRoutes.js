@@ -41,7 +41,7 @@ router.put('/:recipeinfo.title', async (req, res) => {
     {
  
       where: {
-        recipeInfo: req.params.recipeInfo,
+        recipe: req.params.recipeInfo,
       },
     }
   );

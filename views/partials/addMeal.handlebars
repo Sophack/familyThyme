@@ -2,42 +2,16 @@
 <div class="content" id="main">
 
   <section class="card">
-  <!-- The contents of this card links to the gallery page using the gallery ID -->
   <a href="/recipe/{{id}}">
-    <!-- The card contains the gallery name as the card header -->
     <header>{{title}}</header>
-    <!-- The card contains the first painting of the gallery -->
-    <img src="/images/{{recipes.[0].filename}}" alt="{{recipe.[0].title}}">
+    <img src="{{recipeImage.image}}">
   </a>
-
-   <section id="add-recipes">
-            <h2>Add a new recipe</h2>
-         
-          </section>
-          
-          <section id="input-recipes">
-            <h2>Input Your Recipes</h2>
-            <form>
-              <label for="recipe-name">Recipe Name:</label>
-              <input type="text" id="recipe-name" name="recipe-name">
-              <br>
-              <label for="directions">Directions:</label>
-              <textarea id="directions" name="directions"></textarea>
-              <br>
-              <input type="submit" value="Save!">
-            </form>
-          </section>
-          
-          <section id="random-recipe">
-            <h2>Random Recipe</h2>
-            <button id="generate-random">I'm feeling adventurous</button>
-          </section>
-</section>
 
 <div class="w3-container">
   <h2>{{recipeInfo.title}}</h2>
 
-{{!-- should not be repeating code --}}
+ {{/each}}
+
 
   <div class="w3-card-4" style="width:50%">
     {{!-- create object with image --}}
@@ -46,7 +20,7 @@
       <p>{{recipeInfo.category}}</p>
     </div>
   </div>
-    <section id="add-recipes">
+    <section id="userInputRecipe">
             <h2>Add a new recipe</h2>
          
           </section>
@@ -62,11 +36,7 @@
               <br>
               <input type="submit" value="Save!">
             </form>
-          </section>
-          
-          <section id="random-recipe">
-            <h2>Featured Recipe</h2>
-            <button id="generate-random">I'm feeling adventurous</button>
+            <button id="add-recipes">I'm feeling adventurous</button>
           </section>
 </div>
 
@@ -88,4 +58,4 @@
 </body>
 
    
-  {{/each}}
+ 
