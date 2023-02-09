@@ -1,3 +1,6 @@
+DROP DATABASE IF EXISTS recipes_db;
+CREATE DATABASE recipes_db;
+
 
 CREATE TABLE IF NOT EXISTS recipes (
   id SERIAL PRIMARY KEY,
@@ -6,5 +9,3 @@ CREATE TABLE IF NOT EXISTS recipes (
   directions TEXT NOT NULL
 );
 
-
--- //might need to create database
