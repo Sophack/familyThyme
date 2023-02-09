@@ -52,9 +52,9 @@ Once the user goes through the appropriate prompts an HTML file is generated con
 
 ## Contributors
 
-https://github.com/MichaelPonte
+
 https://github.com/Sophack
-https://github.com/jagjhandi
+
 
 ## Technology Used
 - HTML

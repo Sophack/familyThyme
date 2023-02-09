@@ -5,3 +5,6 @@ CREATE TABLE IF NOT EXISTS recipes (
   category VARCHAR(255) NOT NULL,
   directions TEXT NOT NULL
 );
+
+
+-- //might need to create database

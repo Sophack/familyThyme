@@ -1,9 +1,6 @@
 const router = require('express').Router();
 
 
-
-
-
 //get one specific recipe & its directions
 router.get('/recipe/:directions', async (req, res) => {
 
