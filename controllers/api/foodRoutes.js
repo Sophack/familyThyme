@@ -11,7 +11,7 @@ router.post('/', (req, res) => {
   Recipe.create({
     //getting user input
     title: req.body.title,
-    directions: req.body.directions,
+    directions: req.body.directionsAdd,
     category: req.body.category
   })
     //call back function  
