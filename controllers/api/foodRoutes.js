@@ -25,6 +25,35 @@ router.post('/', (req, res) => {
     });
 });
 
+
+//UPDATE a recipe
+
+router.put('/:recipeinfo.title', async (req, res) => {
+  try {
+  //Calls the update method on the Book model
+  const updatedRecipe = await Recipe.update(
+    {
+      // All the fields you can update and the data attached to the request body.
+      title: req.body.title,
+      directions: req.body.directionsAdd,
+      category: req.body.category
+    },
+    {
+ 
+      where: {
+        recipeInfo: req.params.recipeInfo,
+      },
+    }
+  );
+  
+  res.json(updatedRecipe); 
+    }catch (err) {
+          console.log(err);
+          res.status(500).json(err);
+      }
+  }
+);
+
 module.exports = router;
 
 

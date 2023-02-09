@@ -6,9 +6,9 @@ const withAuth = require('../utils/auth');
 router.get('/', async (req, res) => { //Rendering the login page
     try {
         if (!req.session?.loggedIn) {
-        res.render('login');
+        res.render('homepage');
         } else {
-            res.redirect('/homepage');
+            res.redirect('/login');
         }
     } catch (err) {
         console.log(err); 
@@ -21,7 +21,7 @@ router.get('/homepage', withAuth, async (req, res) => { //Rendering homepage
 
          //get routes to try the db data 
     //wait for all the info
-    const recipeData = await Recipe.findAll({
+    const recipeInfo = await Recipe.findAll({
         include: [
           {
             model: Recipe,
@@ -32,29 +32,19 @@ router.get('/homepage', withAuth, async (req, res) => { //Rendering homepage
       });
       //we are serializing the data 
 
-    const recipes = recipeData.map((recipe) =>
+    const recipes = recipeInfo.map((recipe) =>
     recipe.get({ plain: true })
   );
         res.render('homepage', {
-            logged_in: req.session.logged_in
+           recipes
         });
     } catch (err) {
         console.log(err);
         res.status(500).json(err);
     }
 });
-router.get('/', async (req, res) => {
-    // rendering the page or send error
 
-    try {
-        res.render('login');
-    
-    } catch (err) {
-        console.log(err); 
-        res.status(500).json(err);
-    }
 
-});
 
 
 module.exports = router; 

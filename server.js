@@ -30,13 +30,9 @@ const sess = {
     store: new SequelizeStore({
     db: sequelize
     })
-}
+};
 
-
-
-
-
-
+app.use(session(sess));
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');

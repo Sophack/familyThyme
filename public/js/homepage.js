@@ -1,7 +1,7 @@
-const recipeData = require('./recipe.js');
+const recipeInfo = require('./recipe.js');
 
 function addRecipe(title, category, directions) {
-  recipeData.push({
+  recipeInfo.push({
     Title: title,
     Category: category,
     Directions: directions

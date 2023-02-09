@@ -5,9 +5,9 @@ const router = require('express').Router();
 router.get('/recipe/:directions', async (req, res) => {
 
     try {
-      const recipeData = await Recipe.findByPk(req.params.id);
+      const recipeInfo = await Recipe.findByPk(req.params.id);
   
-      const directions = recipeData.get({ plain: true });
+      const directions = recipeInfo.get({ plain: true });
   
       res.render('Recipe', { directions });
     } catch (err) {

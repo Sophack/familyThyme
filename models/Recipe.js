@@ -34,9 +34,13 @@ Recipe.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-    },
+        image: {
+            type: DataTypes.STRING,
+        },
+},
     {
         sequelize,
+        timestamps: false,
         freezeTableName: true,
         underscored: true,
         modelName: "recipe",
