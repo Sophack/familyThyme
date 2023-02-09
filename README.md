@@ -36,7 +36,10 @@ Installation requirements:
 
 User must run ```node server.js``` to start the app. The login page will allow the user to enter credentials to access the application. 
 
-Once the user goes through the appropriate prompts an HTML file is generated containing all the information user inputted. 
+<img width="866" alt="image" src="https://user-images.githubusercontent.com/114966651/217948641-3474fa9b-0e54-4c7f-be39-8433e6ece4a9.png">
+
+Once the user puts their credentials, it should lead them to the homepage where all current recipes are dynamically generated. 
+
 
 
 ## Badges
@@ -66,4 +69,4 @@ https://github.com/Sophack
 
 ## Demonstration
 In order to view the functionality please follow the Heroku link: 
-[https://familyThyme.herokuapp.com](https://family-thyme-proj2.herokuapp.com/)
+[[https://familyThyme.herokuapp.com](https://family-thyme-saraf.herokuapp.com/)]
